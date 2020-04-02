@@ -13,14 +13,23 @@ import XCTest
 class ContainsDuplicatesTests: XCTestCase {
 
     func test_containsDuplicates_true() {
-        
         let array = [1, 2, 3, 1]
-        
         XCTAssertTrue(containsDuplicates(a: array))
     }
-
+    
     func test_containsDuplicates_false() {
         let array = [3, 1]
         XCTAssertFalse(containsDuplicates(a: array))
     }
+    
+    func test_containsDuplicatesSet_true() {
+        let array = [1, 2, 3, 1]
+        XCTAssertTrue(containsDuplicatesWithSet(a: array))
+    }
+
+    func test_containsDuplicatesSet_false() {
+        let array = [3, 1]
+        XCTAssertFalse(containsDuplicatesWithSet(a: array))
+    }
+
 }

@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		ED935CC12433ABD9003F93B7 /* SumOfTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED935CC02433ABD9003F93B7 /* SumOfTwo.swift */; };
-		ED935CC32433AC06003F93B7 /* SumOfTwoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED935CC22433AC06003F93B7 /* SumOfTwoTests.swift */; };
 		EDBA06C32430AE0000127688 /* ArrayManipulationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBA06C22430AE0000127688 /* ArrayManipulationTests.swift */; };
 		EDBA06C52430AF5600127688 /* ContainsDuplicates.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBA06C42430AF5600127688 /* ContainsDuplicates.swift */; };
 		EDBA06C72430AF8900127688 /* ContainsDuplicatesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBA06C62430AF8900127688 /* ContainsDuplicatesTests.swift */; };
@@ -32,8 +30,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		ED935CC02433ABD9003F93B7 /* SumOfTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SumOfTwo.swift; sourceTree = "<group>"; };
-		ED935CC22433AC06003F93B7 /* SumOfTwoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SumOfTwoTests.swift; sourceTree = "<group>"; };
 		EDBA06C22430AE0000127688 /* ArrayManipulationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayManipulationTests.swift; sourceTree = "<group>"; };
 		EDBA06C42430AF5600127688 /* ContainsDuplicates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainsDuplicates.swift; sourceTree = "<group>"; };
 		EDBA06C62430AF8900127688 /* ContainsDuplicatesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainsDuplicatesTests.swift; sourceTree = "<group>"; };
@@ -107,7 +103,6 @@
 				EDBBDB3B242F984F00F00A37 /* Info.plist */,
 				EDBA06C22430AE0000127688 /* ArrayManipulationTests.swift */,
 				EDBA06C62430AF8900127688 /* ContainsDuplicatesTests.swift */,
-				ED935CC22433AC06003F93B7 /* SumOfTwoTests.swift */,
 			);
 			path = AlgorithmsProjectTests;
 			sourceTree = "<group>";
@@ -117,7 +112,6 @@
 			children = (
 				EDBBDB45242F99D900F00A37 /* ArrayManipulation.swift */,
 				EDBA06C42430AF5600127688 /* ContainsDuplicates.swift */,
-				ED935CC02433ABD9003F93B7 /* SumOfTwo.swift */,
 			);
 			path = Algorithms;
 			sourceTree = "<group>";
@@ -227,7 +221,6 @@
 				EDBBDB27242F984E00F00A37 /* ViewController.swift in Sources */,
 				EDBA06C52430AF5600127688 /* ContainsDuplicates.swift in Sources */,
 				EDBBDB23242F984E00F00A37 /* AppDelegate.swift in Sources */,
-				ED935CC12433ABD9003F93B7 /* SumOfTwo.swift in Sources */,
 				EDBBDB46242F99D900F00A37 /* ArrayManipulation.swift in Sources */,
 				EDBBDB25242F984E00F00A37 /* SceneDelegate.swift in Sources */,
 			);
@@ -238,7 +231,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDBA06C72430AF8900127688 /* ContainsDuplicatesTests.swift in Sources */,
-				ED935CC32433AC06003F93B7 /* SumOfTwoTests.swift in Sources */,
 				EDBA06C32430AE0000127688 /* ArrayManipulationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -32,3 +32,21 @@ public func containsDuplicates(a: [Int]) -> Bool {
     
     return false
 }
+
+public func containsDuplicatesWithSet(a: [Int]) -> Bool {
+
+    guard !a.isEmpty else {
+        return false
+    }
+    
+    var resultSet = Set<Int>()
+    
+    for i in a {
+        if resultSet.contains(i) {
+            return true
+        }
+        resultSet.insert(i)
+    }
+    
+    return false
+}

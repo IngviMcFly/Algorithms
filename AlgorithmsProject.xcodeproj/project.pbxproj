@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED2B27812446EF8D00A5749C /* BinaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2B27802446EF8D00A5749C /* BinaryTests.swift */; };
+		ED2B27832446FCD900A5749C /* BinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2B27822446FCD900A5749C /* BinarySearch.swift */; };
 		ED4D060724446FFA006EC198 /* CompressedStringsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4D060624446FFA006EC198 /* CompressedStringsTests.swift */; };
 		ED889B48243B4931006E9DAD /* FiboTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED889B47243B4931006E9DAD /* FiboTask.swift */; };
 		ED889B4A243C5E4B006E9DAD /* FiboTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED889B49243C5E4B006E9DAD /* FiboTests.swift */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		ED2B27802446EF8D00A5749C /* BinaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryTests.swift; sourceTree = "<group>"; };
+		ED2B27822446FCD900A5749C /* BinarySearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearch.swift; sourceTree = "<group>"; };
 		ED4D060624446FFA006EC198 /* CompressedStringsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompressedStringsTests.swift; sourceTree = "<group>"; };
 		ED889B47243B4931006E9DAD /* FiboTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiboTask.swift; sourceTree = "<group>"; };
 		ED889B49243C5E4B006E9DAD /* FiboTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiboTests.swift; sourceTree = "<group>"; };
@@ -113,6 +117,7 @@
 				EDBA06C62430AF8900127688 /* ContainsDuplicatesTests.swift */,
 				ED889B49243C5E4B006E9DAD /* FiboTests.swift */,
 				ED4D060624446FFA006EC198 /* CompressedStringsTests.swift */,
+				ED2B27802446EF8D00A5749C /* BinaryTests.swift */,
 			);
 			path = AlgorithmsProjectTests;
 			sourceTree = "<group>";
@@ -124,6 +129,7 @@
 				EDBA06C42430AF5600127688 /* ContainsDuplicates.swift */,
 				ED889B47243B4931006E9DAD /* FiboTask.swift */,
 				EDA0B1D32445AD4900EA009F /* StringCompression.swift */,
+				ED2B27822446FCD900A5749C /* BinarySearch.swift */,
 			);
 			path = Algorithms;
 			sourceTree = "<group>";
@@ -230,6 +236,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED2B27832446FCD900A5749C /* BinarySearch.swift in Sources */,
 				EDBBDB27242F984E00F00A37 /* ViewController.swift in Sources */,
 				EDBA06C52430AF5600127688 /* ContainsDuplicates.swift in Sources */,
 				ED889B48243B4931006E9DAD /* FiboTask.swift in Sources */,
@@ -248,6 +255,7 @@
 				ED4D060724446FFA006EC198 /* CompressedStringsTests.swift in Sources */,
 				EDBA06C72430AF8900127688 /* ContainsDuplicatesTests.swift in Sources */,
 				EDBA06C32430AE0000127688 /* ArrayManipulationTests.swift in Sources */,
+				ED2B27812446EF8D00A5749C /* BinaryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

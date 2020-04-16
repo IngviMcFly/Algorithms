@@ -84,3 +84,71 @@ func printNumberAndLetter(char: Character, count: Int) -> String {
         return "\(count)\(char)"
     }
 }
+
+func minSubstringWithAllChars(s: String, t: String) -> String {
+        
+    let len1 = s.count
+    let len2 = t.count
+            
+    if len1 == 0 || len2 == 0 || len1 < len2 {
+        return ""
+    }
+    
+    let charArray = Array(s)
+    let patternCharArray = Array(t)
+    
+    var occurencesDict: [Character: Int] = [:]
+    
+    var count = 0
+    var begin = 0
+    
+    var minWindow = Int.max
+        
+    for index in ( 0..<len1 ) {
+        
+        let currentChar = charArray[index]
+        
+        // check if current char contains in pattern string
+        if !patternCharArray.contains(currentChar) {
+            continue
+        }
+        
+        // update occurences
+        if let _ = occurencesDict[currentChar] {
+            // keep value
+        } else {
+            // increment count
+            count += 1
+        }
+        
+        occurencesDict[currentChar] = index
+        
+        if count == len2 {
+            
+            // check distance
+            let values = occurencesDict.values.sorted(by: <)
+            let distance = values[values.count - 1] - values[0]
+            
+            if distance < minWindow {
+                // update min window
+                minWindow = distance
+                // update first index
+                begin = values[0]
+            }
+            
+            // fast exit
+            if minWindow == len2 {
+                break
+            }
+            
+        }
+        
+    }
+    
+    if count == len2 {
+        return String(charArray[begin ... begin + minWindow])
+    } else {
+        return ""
+    }
+
+}

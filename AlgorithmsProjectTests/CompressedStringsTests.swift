@@ -20,4 +20,8 @@ class CompressedStringsTests: XCTestCase {
         XCTAssertEqual(solution(S: "ABCDDDEFG", K: 2), 6)
     }
 
+    func test_minSubstring() {
+        XCTAssertEqual(minSubstringWithAllChars(s: "adobecodebanc", t: "abc"), "banc")
+    }
 }
+

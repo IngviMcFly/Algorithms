@@ -23,6 +23,8 @@
 		EDBBDB2C242F984E00F00A37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDBBDB2B242F984E00F00A37 /* Assets.xcassets */; };
 		EDBBDB2F242F984E00F00A37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDBBDB2D242F984E00F00A37 /* LaunchScreen.storyboard */; };
 		EDBBDB46242F99D900F00A37 /* ArrayManipulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBBDB45242F99D900F00A37 /* ArrayManipulation.swift */; };
+		EDC3D1CB244CDB5700B5712A /* ListManipulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC3D1C9244CCE0700B5712A /* ListManipulation.swift */; };
+		EDC3D1CD244CDB6F00B5712A /* ListManipulationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC3D1CC244CDB6F00B5712A /* ListManipulationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 		EDBBDB35242F984F00F00A37 /* AlgorithmsProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlgorithmsProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDBBDB3B242F984F00F00A37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EDBBDB45242F99D900F00A37 /* ArrayManipulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayManipulation.swift; sourceTree = "<group>"; };
+		EDC3D1C9244CCE0700B5712A /* ListManipulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListManipulation.swift; sourceTree = "<group>"; };
+		EDC3D1CC244CDB6F00B5712A /* ListManipulationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListManipulationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +122,7 @@
 				ED889B49243C5E4B006E9DAD /* FiboTests.swift */,
 				ED4D060624446FFA006EC198 /* CompressedStringsTests.swift */,
 				ED2B27802446EF8D00A5749C /* BinaryTests.swift */,
+				EDC3D1CC244CDB6F00B5712A /* ListManipulationTests.swift */,
 			);
 			path = AlgorithmsProjectTests;
 			sourceTree = "<group>";
@@ -130,6 +135,7 @@
 				ED889B47243B4931006E9DAD /* FiboTask.swift */,
 				EDA0B1D32445AD4900EA009F /* StringFindings.swift */,
 				ED2B27822446FCD900A5749C /* BinarySearch.swift */,
+				EDC3D1C9244CCE0700B5712A /* ListManipulation.swift */,
 			);
 			path = Algorithms;
 			sourceTree = "<group>";
@@ -238,6 +244,7 @@
 			files = (
 				ED2B27832446FCD900A5749C /* BinarySearch.swift in Sources */,
 				EDBBDB27242F984E00F00A37 /* ViewController.swift in Sources */,
+				EDC3D1CB244CDB5700B5712A /* ListManipulation.swift in Sources */,
 				EDBA06C52430AF5600127688 /* ContainsDuplicates.swift in Sources */,
 				ED889B48243B4931006E9DAD /* FiboTask.swift in Sources */,
 				EDBBDB23242F984E00F00A37 /* AppDelegate.swift in Sources */,
@@ -251,6 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDC3D1CD244CDB6F00B5712A /* ListManipulationTests.swift in Sources */,
 				ED889B4A243C5E4B006E9DAD /* FiboTests.swift in Sources */,
 				ED4D060724446FFA006EC198 /* CompressedStringsTests.swift in Sources */,
 				EDBA06C72430AF8900127688 /* ContainsDuplicatesTests.swift in Sources */,

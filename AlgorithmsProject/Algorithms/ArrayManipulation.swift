@@ -73,3 +73,18 @@ func mergeTwoSortedArrays(arr1: [Int], arr2: [Int]) -> [Int] {
     
     return result
 }
+
+func singleNumber(_ nums: [Int]) -> Int {
+    
+    var uniqueSet = Set<Int>()
+    
+    for num in nums {
+        if !uniqueSet.contains(num) {
+            uniqueSet.insert(num)
+        } else {
+            uniqueSet.remove(num)
+        }
+    }
+    
+    return uniqueSet.first!
+}

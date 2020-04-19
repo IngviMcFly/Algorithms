@@ -33,4 +33,38 @@ class ArrayManipulationTests: XCTestCase {
         XCTAssertEqual(mergeTwoSortedArrays(arr1: arr1, arr2: arr2), [1, 2, 5, 7, 17, 17, 25, 29, 31, 38])
     }
     
+    func test_uniqueElement() {
+        XCTAssertEqual(singleNumber([4,1,2,1,2]), 4)
+        XCTAssertEqual(singleNumber([2,2,1]), 1)
+    }
+    
+    func test_maxSubArray() {
+        XCTAssertEqual(maxSubArray([-2,1,-3,4,-1,2,1,-5,4]), 6)
+        XCTAssertEqual(maxSubArray([-2,1]), 1)
+    }
+    
+}
+
+func maxSubArray(_ nums: [Int]) -> Int {
+    
+    var maxSum = nums.first!
+    var current = maxSum
+    
+    for i in (1..<nums.count) {
+        
+        let sum = nums[i] + current
+        
+        if sum > nums[i] {
+            current = sum
+        } else {
+            current = nums[i]
+        }
+        
+        if current > maxSum {
+            maxSum = current
+        }
+        
+    }
+    
+    return maxSum
 }

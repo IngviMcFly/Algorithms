@@ -88,3 +88,27 @@ func singleNumber(_ nums: [Int]) -> Int {
     
     return uniqueSet.first!
 }
+
+func maxSubArray(_ nums: [Int]) -> Int {
+    
+    var maxSum = nums.first!
+    var current = maxSum
+    
+    for i in (1..<nums.count) {
+        
+        let sum = nums[i] + current
+        
+        if sum > nums[i] {
+            current = sum
+        } else {
+            current = nums[i]
+        }
+        
+        if current > maxSum {
+            maxSum = current
+        }
+        
+    }
+    
+    return maxSum
+}

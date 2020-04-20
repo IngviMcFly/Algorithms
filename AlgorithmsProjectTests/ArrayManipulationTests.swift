@@ -42,5 +42,9 @@ class ArrayManipulationTests: XCTestCase {
         XCTAssertEqual(maxSubArray([-2,1,-3,4,-1,2,1,-5,4]), 6)
         XCTAssertEqual(maxSubArray([-2,1]), 1)
     }
-    
+
+    func test_shapeArea() {
+        XCTAssertEqual(shapeArea(n: 3), 13)
+        XCTAssertEqual(shapeArea(n: 3), 13)
+    }
 }

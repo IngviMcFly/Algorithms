@@ -112,3 +112,39 @@ func maxSubArray(_ nums: [Int]) -> Int {
     
     return maxSum
 }
+
+func shapeArea(n: Int) -> Int {
+    
+    if n == 1 {
+        return n
+    }
+
+    var result = 0
+    var startCounter = 1
+    
+    var isAscending = true
+    
+    while startCounter > 0 {
+        
+        if startCounter == 0 {
+            break
+        }
+                        
+        if startCounter == 1 {
+            result += startCounter
+        } else {
+            result += (startCounter * 2) - 1
+        }
+        
+        
+        if (startCounter < n) && isAscending {
+            startCounter += 1
+        } else {
+            startCounter -= 1
+            isAscending = false
+        }
+        
+    }
+
+    return result
+}

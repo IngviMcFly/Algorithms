@@ -12,13 +12,13 @@ import XCTest
 
 class ArrayManipulationTests: XCTestCase {
     
-    let array = [1, 2, 3, 4, 10, 11]
-
     func test_simpleArraySum() {
+        let array = [1, 2, 3, 4, 10, 11]
         XCTAssertEqual(31, simpleArraySum(ar: array))
     }
     
     func test_mapArray() {
+        let array = [1, 2, 3, 4, 10, 11]
         XCTAssertEqual([10, 20, 30, 40, 100, 110], simpleMap(arr: array))
     }
 
@@ -47,4 +47,5 @@ class ArrayManipulationTests: XCTestCase {
         XCTAssertEqual(shapeArea(n: 3), 13)
         XCTAssertEqual(shapeArea(n: 3), 13)
     }
+    
 }

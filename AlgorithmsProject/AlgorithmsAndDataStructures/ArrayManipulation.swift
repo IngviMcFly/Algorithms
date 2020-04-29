@@ -148,3 +148,31 @@ func shapeArea(n: Int) -> Int {
 
     return result
 }
+
+func commonCharacterCount(s1: String, s2: String) -> Int {
+    var dictToCompare = [Character:Int]()
+    for s in s1 {
+        guard let _ = dictToCompare[s] else {
+            dictToCompare[s] = 1
+            continue
+        }
+
+        dictToCompare[s]! += 1
+    }
+
+    var result = 0
+    
+    for s in s2 {
+        guard let _ = dictToCompare[s] else {
+            continue
+        }
+
+        dictToCompare[s]! -= 1
+        if dictToCompare[s] == 0 {
+            dictToCompare.removeValue(forKey: s)
+        }
+        result += 1
+    }
+
+    return result
+}

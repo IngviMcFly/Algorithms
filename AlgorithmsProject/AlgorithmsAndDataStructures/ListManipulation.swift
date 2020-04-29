@@ -59,3 +59,46 @@ func removeKFromList(l: ListNode<Int>?, k: Int) -> ListNode<Int>? {
 
     return firstNode
 }
+
+func isListPalindrome(l: ListNode<Int>?) -> Bool {
+
+    guard let list = l else {
+        return true
+    }
+
+    var array = [Int]()
+
+    var currentNode = list
+    while true {
+        array.append(currentNode.value)
+        if let next = currentNode.next {
+            currentNode = next
+        } else {
+            break
+        }
+    }
+
+    let arrayCount = array.count
+    if arrayCount == 1 {
+        return true
+    }
+
+    let middleIndex = arrayCount / 2
+    var count = 0
+
+    if arrayCount % 2 == 0 {
+        count = middleIndex
+    } else {
+        count = middleIndex - 1
+    }
+    
+    for i in (0..<count) {
+        let leftItem = array[i]
+        let rightItem = array[(arrayCount - 1) - i]
+        if leftItem != rightItem {
+            return false
+        }
+    }
+
+    return true
+}

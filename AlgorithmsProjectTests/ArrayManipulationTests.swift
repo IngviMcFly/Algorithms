@@ -48,4 +48,7 @@ class ArrayManipulationTests: XCTestCase {
         XCTAssertEqual(shapeArea(n: 3), 13)
     }
     
+    func test_commonCharacterCount() {
+        XCTAssertEqual(commonCharacterCount(s1: "aabcc", s2: "adcaa"), 3)
+    }
 }

@@ -45,6 +45,22 @@ class ListManipulationTests: XCTestCase {
         XCTAssertEqual(array, [1, 2, 4, 5])
     }
 
-    
+    func test_isPalindrome_Positive() {
+        
+        let first = ListNode<Int>(1)
+        let second  = ListNode<Int>(2)
+        let third  = ListNode<Int>(3)
+        let fourth  = ListNode<Int>(3)
+        let fifth  = ListNode<Int>(2)
+        let sixth  = ListNode<Int>(1)
+        
+        first.next = second
+        second.next = third
+        third.next = fourth
+        fourth.next = fifth
+        fifth.next = sixth
+                
+        XCTAssertTrue(isListPalindrome(l: first))
+    }
 
 }

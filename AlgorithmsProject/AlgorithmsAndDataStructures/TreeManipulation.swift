@@ -8,16 +8,20 @@
 
 import Foundation
 
-public class Tree<T> {
+public class TreeNode<T> {
     
     private let value: T
-    private let leftValue: Tree?
-    private let rightValue: Tree?
+    
+    public var leftValue: TreeNode?
+    public var rightValue: TreeNode?
+    
+    public weak var parent: TreeNode?
     
     init(_ value: T) {
         self.value = value
         self.leftValue = nil
         self.rightValue = nil
+        self.parent = nil
     }
     
 }
